@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backendmap
+  namespace: pandu-mbiradar-dev
+data:
+  db_host: postgresql
+  db_port: "5432"
+  db_name: sampledb
+  ddl_auto: create

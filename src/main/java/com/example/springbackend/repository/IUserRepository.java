@@ -1,6 +1,7 @@
-package com.example.springbootjpa.repository;
+package com.example.springbackend.repository;
 
-import com.example.springbootjpa.entity.User;
+
+import com.example.springbackend.entity.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

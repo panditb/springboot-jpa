@@ -1,8 +1,9 @@
-package com.example.springbootjpa.controller;
+package com.example.springbackend.controller;
 
 
-import com.example.springbootjpa.entity.User;
-import com.example.springbootjpa.repository.IUserRepository;
+
+import com.example.springbackend.entity.User;
+import com.example.springbackend.repository.IUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

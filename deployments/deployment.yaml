@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backendmap
+  name: backendapp
   annotations:
   namespace: pandu-mbiradar-dev
 spec:
@@ -16,11 +16,11 @@ spec:
     spec:
       containers:
         - name: backendapp
-          image: https://docker.io/pabirad/learning:latest
+          image: https://image-registry.openshift-image-registry.svc:5000/pandu-mbiradar-dev/springboot-jpa:latest
           ports:
             - containerPort: 8080
-        envFrom:
-          - configMapRef:
-            name: backendmap
-          - secretKeyRef:
-            name: backendsecrete
+          envFrom:
+            - configMapRef:
+                name: backendmap
+            - secretRef:
+                name: backendsecrete

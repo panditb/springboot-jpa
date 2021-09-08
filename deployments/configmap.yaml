@@ -4,7 +4,8 @@ metadata:
   name: backendmap
   namespace: pandu-mbiradar-dev
 data:
-  db_host: postgresql
-  db_port: "5432"
-  db_name: sampledb
-  ddl_auto: create
+  data:
+    db_host: postgresql
+    db_name: sampledb
+    db_port: '5432'
+    ddl_auto: none
